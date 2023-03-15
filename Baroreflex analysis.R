@@ -38,7 +38,7 @@ piecewise_model$psi         # Returns the breakpoints calculated by the piecewis
 
 #------------------
 
-# Symmetric logistic regression - equation 1 (Kent et al., 1971) 
+# Symmetric logistic regression - equation 1 (Kent et al., 1972) 
 
 symmetric_model <- nlsLM(y ~ d+(a-d)/(1+(exp(b*(x-c)))), 
                          data = YourDataFrame, 
